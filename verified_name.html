@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/verified_name.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<header>
+    <div class="top-nav">
+        <div class="w">
+            <div class="left-area">
+                <div class="logo"><a href="#"></a></div>
+                <ul class="nav">
+                    <li class="current"><a href="#">推荐</a></li>
+                    <li><a href="#">动态</a></li>
+                    <li><a href="#">遇见</a></li>
+                    <li><a href="#">搭讪广场</a></li>
+                    <li><a href="#">个人主页</a></li>
+                </ul>
+            </div>
+            <div class="right-area">
+                <a href="#"><span class="sp1"></span><span class="sp2">服务</span><span class="sp3"></span></a>
+                <a href="#"><em></em></a>
+                <a href="#"><span class="sp1"></span></a>
+                <a href="#"><span class="sp1"></span></a>
+                <div class="today-base">
+                    <a href="#">今日推荐<em class="notice-num">1</em></a>
+                    <a href="#">暂不提示</a>
+                </div>
+                <div class="msg-box">
+                    <ul>
+                        <li><a href="#">查看私信</a></li>
+                        <li><a href="#">新增"赞"</a></li>
+                        <li><a href="#">新增喜欢</a></li>
+                        <li><a href="#">最近访客</a></li>
+                        <li class="bot-border"><a href="#">收到礼物</a></li>
+                        <li><a href="#" class="hl">今日推荐<em class="notice-num1">1</em></a></li>
+                        <li><a href="#">系统通知</a></li>
+                        <li><a href="#">话题消息</a></li>
+                        <li><a href="#">约会消息</a></li>
+                    </ul>
+                    <p><a href="#">查看全部消息</a></p>
+                </div>
+                <div class="msg-box1">
+                    <ul>
+                        <li><a href="#" class="notice-new">邀好友赢会员<em></em></a></li>
+                        <li><a href="#">账号设置</a></li>
+                        <li><a href="#">会员服务中心</a></li>
+                        <li><a href="#">信用等级</a></li>
+                        <li><a href="#">认证</a></li>
+                        <li><a href="#">关闭资料</a></li>
+                    </ul>
+                    <p><a href="#">退出</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="middle">
+    <div class="w">
+        <div class="contentbox-inner">
+            <ul class="tabbar">
+                <li class="current" data-target="tab1"><a href="#">身份认证</a></li>
+                <li><a href="#">手机认证</a></li>
+                <li><a href="#">芝麻信用</a></li>
+                <li><a href="#">学历认证</a></li>
+                <li><a href="#">职业认证</a></li>
+                <li><a href="#">车辆认证</a></li>
+                <li><a href="#">房产信息</a></li>
+            </ul>
+
+            <!-- tab栏切换开始，下面是主体内容 -->
+
+            <!-- 身份认证, tab1 -->
+            <div class="setting-box" data-target="tab1">
+                <div class="verify-mess">
+                    <div class="mess-tips">
+                        <em class="verify-avatar"></em>
+                        <div class="mess-content-tab">
+                            <h3>身份认证</h3>
+                            <p>花田是一个真实优质的婚恋交友平台，我们提倡身份认证，让恋爱更安全、可靠。以下/以上信息仅供此次认证使用，将严格保密，请安心认证。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-box verify-name-box">
+
+                    <div class="form-control">
+                        <span class="required-symbol">*</span>
+                        <label>真实姓名：</label>
+                        <input class="col-9" type="text" name="" placeholder="请输入您的真实姓名">
+                        <span class="text-icon-tips text-icon-tips-correct on">
+                            <em class="icon-correct-check"></em>
+                        </span>
+                        <span class="text-icon-tips text-icon-tips-incorrect on">
+                            <em class="icon-incorrect-check"></em>
+                            <i>请输入您的真实姓名</i>
+                        </span>
+                    </div>
+
+                    <div class="form-control">
+                        <span class="required-symbol">*</span>
+                        <label>身份证号：</label>
+                        <input class="col-9" type="text" name="" placeholder="请输入您的身份证号">
+                        <span class="text-icon-tips text-icon-tips-correct on">
+                            <em class="icon-correct-check"></em>
+                        </span>
+                        <span class="text-icon-tips text-icon-tips-incorrect on">
+                            <em class="icon-incorrect-check"></em>
+                            <i>请输入您的身份证号</i>
+                        </span>
+                    </div>
+
+                    <div class="form-control none-label-control">
+                        <div class="label">
+                            <span class="required-symbol">*</span>
+                            <label>上传照片：</label>
+                        </div>
+                        <div class="identify-card">
+                            <div class="front">
+                                <em></em>
+                                <h3>身份证正面照</h3>
+                            </div>
+                            <div class="backend">
+                                <em></em>
+                                <h3>手持身份证正面照</h3>
+                            </div>
+                        </div>
+                        <div class="card-demo">
+                            <div class="front">
+                                <h3>示例</h3>
+                                <img src="images/card-demo01.png" alt="">
+                            </div>
+                            <div class="backend">
+                                <h3>示例</h3>
+                                <img src="images/card-demo02.png" alt="">
+                            </div>
+                        </div>
+
+                        <a class="red-btn disabled" href="#">提交</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tail-verify-tips">
+                <em class="icon-tips"></em>
+                <dl>
+                    <dt>认证小贴士</dt>
+                    <dd class="text-gray">1、花田鼓励真实、诚信的婚恋态度，建议您进行多项认证，以证明自己身份的真实性和交友的严肃性。</dd>
+                    <dd class="text-gray">
+                        <h4>2、认证通过的好处：</h4>
+                        <p>认证用户将在首页、搜索结果页中得到更多的展示机会；</p>
+                        <p>个人主页中将明确显示已通过认证的标示（如身份认证icon），增强用户的诚信度，赢得更多机会；</p>
+                        <p>认证项越多的用户被关注度越高，收到的交友私信数量也越多；</p>
+                    </dd>
+                    <dd class="text-gray">
+                        3、花田将严格保护您的隐私，您的认证信息只会以各种点亮的图标显示。
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="w">
+        <div class="bot">
+            <a href="#">公司简介</a> -
+            <a href="#">联系方法</a> -
+            <a href="#">招聘信息</a> -
+            <a href="#">使用条款</a> -
+            <a href="#">花田动态</a> -
+            <a href="#">友情链接</a> -
+            <a href="#">网站地图</a> -
+            <a href="#">花田意见反馈</a> -
+            增值电信业务经营许可证：<a href="#">浙B2-20090185</a><br/>
+            网易公司版权所有<br/>
+            <i>©1997-2016</i>
+        </div>
+    </div>
+</section>
+</body>
+</html>
