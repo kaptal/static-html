@@ -25,6 +25,7 @@
 }
 
 .profile-basic-main{
+    width: 600px;
     max-width: 600px;
     position:absolute;
     right:0;
@@ -811,4 +812,27 @@
     text-align: center;
 }
 
+.profile-basic-tag-desc {
+    position: relative;
+    margin-top: 10px;
+    font-family: "SimSun", "宋体";
+    color:#fff;
+    font-size:13px;
+}
 
+.profile-basic-tag-desc a {
+    font-family: "SimSun", "宋体";
+    color:#fff;
+    font-size:13px;
+    text-decoration: underline;
+}
+
+.profile-basic-tag-desc .icon-edit-s {
+    cursor: pointer;
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    top: 6px;
+    left: 260px;
+    background: url(../images/icon_v160825.png) -113px -84px no-repeat;
+}
