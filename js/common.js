@@ -347,6 +347,25 @@ $(function(){
         $('.feed-filter').slideUp(1000);
     });
 
+    /**
+     * profile-basic-tag-desc
+     */
+    $('.profile-basic-tag-desc .icon-edit-s').on('click', function () {
+        $('.tag-too-few-modal').show();
+    });
+
+
+    /**
+     * 模态框的关闭
+     */
+    $('.tag-too-few-modal .icon-close').on('click', function () {
+        $('.tag-too-few-modal').hide();
+    });
+
+    $('.tag-too-few-modal .foot-row .red-button').on('click', function () {
+        $('.tag-too-few-modal').hide();
+    });
+
 });
 
 function closeAllSelectFilter()

@@ -183,3 +183,117 @@ option {
     color: #fff;
     background-color: #FF7D6C;
 }
+
+/*
+下面是一些最公共，但非常通用的样式
+*/
+
+.general-btn {
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    outline: none;
+    text-align: center;
+}
+
+.red-button {
+    background-color: #FF3333;
+    color: #fff;
+}
+
+.red-button:hover {
+    color: #fff;
+    background-color: #FF7D6C;
+}
+
+.gray-button {
+    background: #9C9C9C;
+    color: #FFF;
+}
+
+.gray-button:hover {
+    background-color: #C6C8CB;
+}
+
+.submit-red-button.disabled {
+    background-color: #C7C7C7;
+    color: #A2A2A2;
+}
+
+
+/*弹出的模态框开始*/
+
+.modal-layer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 9999;
+}
+
+.modal-layer .main-box {
+    border: 1px solid #0E2A33;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.modal-layer-main-sm {
+    width: 555px;
+}
+
+.modal-layer .title-row {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #EDEDED;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.modal-layer .title-row > h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.modal-layer .title-row .icon-close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #fff;
+    right: 15px;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background: url(../images/icon_v160825.png) -101px -229px no-repeat;
+}
+
+.modal-layer .title-row .icon-close:hover {
+    border: 2px solid #FF5555;
+    background: url(../images/icon_v160825.png) -116px -229px no-repeat;
+    background-color: #FF5555;
+}
+
+.modal-layer .foot-row {
+    position: relative;
+    background: #F0F0F0;
+    height: 40px;
+}
+
+.modal-layer .foot-row .red-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/*弹出的模态框结束*/

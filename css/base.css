@@ -69,3 +69,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 .in-block{
     display:inline-block;
 }
+
+form {
+    position: relative;
+}

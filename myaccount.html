@@ -5,6 +5,7 @@
     <title>个人中心</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/myaccount.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
@@ -354,5 +355,28 @@
             </div>
         </div>
     </div>
+
+<!-- 模态框标签提示开始 -->
+    <div class="modal-layer hide tag-too-few-modal">
+        <div class="main-box modal-layer-main-sm">
+            <div class="title-row">
+                <h3>我的标签</h3>
+                <a class="icon-close" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="result-inner">
+                    <em></em>
+                    <div class="js-tips">
+                        <p>很抱歉，你的资料过少无法提取标签</p>
+                        <p>你需要继续<a href="javascript:;">回答QA</a>、或<a href="javascript:;">完善资料</a>。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-row">
+                <a class="general-btn red-button" href="javascript:;">知道了</a>
+            </div>
+        </div>
+    </div>
+<!-- 模态框标签提示结束-->
 </body>
 </html>

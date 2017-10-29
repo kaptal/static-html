@@ -836,3 +836,39 @@
     left: 260px;
     background: url(../images/icon_v160825.png) -113px -84px no-repeat;
 }
+
+.modal-layer .content {
+    margin-left: 123px;
+}
+
+.modal-layer .content .result-inner {
+    position: relative;
+    padding-left: 50px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.modal-layer .content .result-inner em {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 46px;
+    height: 52px;
+    background: url(../images/noresult.png);
+}
+
+.modal-layer .content .result-inner .js-tips {
+    font-family: "SimSun", "宋体";
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.modal-layer .content .result-inner .js-tips a {
+    color: #4D97EF;
+}
+
+.modal-layer .content .result-inner .js-tips a:hover {
+    text-decoration: underline;
+}
