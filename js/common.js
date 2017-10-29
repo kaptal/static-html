@@ -366,6 +366,24 @@ $(function(){
         $('.tag-too-few-modal').hide();
     });
 
+    /**
+     * 基本出入地资料的填写
+     */
+    $(document).on('click', '.lover-desc-box .a-icon-edit', function () {
+        var jsEditObject = $('.lover-desc-box .js-edit');
+        if (jsEditObject.hasClass('hide')) {
+            $('.js-info-preview').removeClass('show').addClass('hide');
+            jsEditObject.removeClass('hide').addClass('show');
+        } else {
+            $('.js-info-preview').removeClass('hide').addClass('show');
+            jsEditObject.removeClass('show').addClass('hide');
+        }
+    });
+
+    $('.js-tips .icon-close').on('click', function () {
+        $(this).parent().remove();
+    });
+
 });
 
 function closeAllSelectFilter()
