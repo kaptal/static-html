@@ -371,13 +371,18 @@ $(function(){
      */
     $(document).on('click', '.lover-desc-box .a-icon-edit', function () {
         var jsEditObject = $('.lover-desc-box .js-edit');
-        if (jsEditObject.hasClass('hide')) {
-            $('.js-info-preview').removeClass('show').addClass('hide');
-            jsEditObject.removeClass('hide').addClass('show');
-        } else {
-            $('.js-info-preview').removeClass('hide').addClass('show');
-            jsEditObject.removeClass('show').addClass('hide');
-        }
+        $('.js-info-preview').removeClass('show').addClass('hide');
+        jsEditObject.removeClass('hide').addClass('show');
+        $(this).parent().removeClass('show').addClass('hide');
+        $('.lover-desc-box .a-cancel-edit-text').parent().removeClass('hide').addClass('show');
+    });
+
+    $('.lover-desc-box .a-cancel-edit-text').on('click', function () {
+        var jsEditObject = $('.lover-desc-box .js-edit');
+        $('.js-info-preview').removeClass('hide').addClass('show');
+        jsEditObject.removeClass('show').addClass('hide');
+        $(this).parent().removeClass('show').addClass('hide');
+        $('.lover-desc-box .a-icon-edit').parent().removeClass('hide').addClass('show');
     });
 
     $('.js-tips .icon-close').on('click', function () {
