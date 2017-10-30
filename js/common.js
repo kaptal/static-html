@@ -371,7 +371,7 @@ $(function(){
      */
     $(document).on('click', '.lover-desc-box .a-icon-edit', function () {
         var jsEditObject = $('.lover-desc-box .js-edit');
-        $('.js-info-preview').removeClass('show').addClass('hide');
+        $('.lover-desc-box .js-info-preview').removeClass('show').addClass('hide');
         jsEditObject.removeClass('hide').addClass('show');
         $(this).parent().removeClass('show').addClass('hide');
         $('.lover-desc-box .a-cancel-edit-text').parent().removeClass('hide').addClass('show');
@@ -379,7 +379,7 @@ $(function(){
 
     $('.lover-desc-box .a-cancel-edit-text').on('click', function () {
         var jsEditObject = $('.lover-desc-box .js-edit');
-        $('.js-info-preview').removeClass('hide').addClass('show');
+        $('.lover-desc-box .js-info-preview').removeClass('hide').addClass('show');
         jsEditObject.removeClass('show').addClass('hide');
         $(this).parent().removeClass('show').addClass('hide');
         $('.lover-desc-box .a-icon-edit').parent().removeClass('hide').addClass('show');
@@ -388,6 +388,39 @@ $(function(){
     $('.js-tips .icon-close').on('click', function () {
         $(this).parent().remove();
     });
+
+    $(document).on('click', '.member-base-info .a-icon-edit', function () {
+        var jsEditObject = $('.member-base-info .js-edit');
+        $('.member-base-info .js-info-preview').removeClass('show').addClass('hide');
+        jsEditObject.removeClass('hide').addClass('show');
+        $(this).parent().removeClass('show').addClass('hide');
+        $('.member-base-info .a-cancel-edit-text').parent().removeClass('hide').addClass('show');
+    });
+
+    $('.member-base-info .a-cancel-edit-text').on('click', function () {
+        var jsEditObject = $('.member-base-info .js-edit');
+        $('.member-base-info .js-info-preview').removeClass('hide').addClass('show');
+        jsEditObject.removeClass('show').addClass('hide');
+        $(this).parent().removeClass('show').addClass('hide');
+        $('.member-base-info .a-icon-edit').parent().removeClass('hide').addClass('show');
+    });
+
+    $(document).on('click', '.member-detail-box .a-icon-edit', function () {
+        var jsEditObject = $('.member-detail-box .js-edit');
+        $('.member-detail-box .js-info-preview').removeClass('show').addClass('hide');
+        jsEditObject.removeClass('hide').addClass('show');
+        $(this).parent().removeClass('show').addClass('hide');
+        $('.member-detail-box .a-cancel-edit-text').parent().removeClass('hide').addClass('show');
+    });
+
+    $('.member-detail-box .a-cancel-edit-text').on('click', function () {
+        var jsEditObject = $('.member-detail-box .js-edit');
+        $('.member-detail-box .js-info-preview').removeClass('hide').addClass('show');
+        jsEditObject.removeClass('show').addClass('hide');
+        $(this).parent().removeClass('show').addClass('hide');
+        $('.member-detail-box .a-icon-edit').parent().removeClass('hide').addClass('show');
+    });
+
 
 });
 
