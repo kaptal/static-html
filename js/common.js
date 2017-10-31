@@ -421,6 +421,20 @@ $(function(){
         $('.member-detail-box .a-icon-edit').parent().removeClass('hide').addClass('show');
     });
 
+    // myaccount
+    $('.select-university .poplayer-schoolbox-select .js-switch-form').on('click', function () {
+        $(this).parent().addClass('hide');
+        $('.poplayer-schoolbox-select-form').removeClass('hide');
+    });
+
+    $('input.graduate-university').on('focus', function () {
+        $('.modal-layer.select-university').removeClass('hide').addClass('show');
+    });
+
+    $('.modal-layer.select-university .icon-close').on('click', function () {
+        $('.modal-layer.select-university').removeClass('show').addClass('hide');
+    });
+
 
 });
 

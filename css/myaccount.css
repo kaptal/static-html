@@ -998,3 +998,63 @@
 .member-detail-box {
     position: relative;
 }
+
+/*大学的模态框开始*/
+.modal-layer .modal-layer-main {
+    width: 710px;
+    background-color: #E8E8E8;
+}
+
+.select-university .main-box {
+    background-color: #E8E8E8;
+}
+
+.select-university .js-body {
+    background: #F3F3F3;
+}
+
+.select-university .js-body .poplayer-bd {
+    padding: 15px 20px 30px;
+    /*background-color: #F7F7F7;*/
+}
+
+.select-university .poplayer-schoolbox-select {
+    background-color: #F3F3F3;
+}
+
+.select-university .poplayer-schoolbox-select .select-label {
+    color: #636363;
+    font-size: 12px;
+}
+
+.poplayer-schoolbox-select .js-select-province {
+    width: 120px;
+}
+
+.poplayer-schoolbox-select .select-label .click-trigger {
+    color: #333;
+}
+
+.poplayer-schoolbox-select .select-label .click-trigger:hover {
+    text-decoration: underline;
+}
+
+.poplayer-schoolbox-select-form input {
+    border: 1px solid #A9A9A9;
+    height: 17px;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.poplayer-schoolbox-select span.select-label {
+    margin-left: 10px;
+}
+
+.select-university .poplayer-schoolbox-list {
+    width: 655px;
+    height: 405px;
+    background-color: #F7F7F7;
+    margin-top: 10px;
+}
+
+/*大学的模态框结束*/

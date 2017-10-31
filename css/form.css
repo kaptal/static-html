@@ -243,6 +243,7 @@ option {
     transform: translate(-50%, -50%);
     padding-left: 1px;
     padding-right: 1px;
+    box-shadow: 0 0 1px 0 #000;
 }
 
 .modal-layer-main-sm {
@@ -267,7 +268,7 @@ option {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border: 2px solid #fff;
+    border: 2px solid transparent;
     right: 15px;
     width: 9px;
     height: 9px;

@@ -392,7 +392,7 @@
                                 <div class="form-row">
                                     <label class="form-label">毕业院校:</label>
                                     <div class="form-control">
-                                        <input class="input-text single-column" type="text" placeholder="">
+                                        <input class="input-text single-column graduate-university" type="text" placeholder="">
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -694,5 +694,34 @@
         </div>
     </div>
 <!-- 模态框标签提示结束-->
+
+<!-- 大学模态框开始 -->
+    <div class="modal-layer hide select-university">
+        <div class="main-box modal-layer-main">
+            <div class="title-row">
+                <h3>选择毕业院校</h3>
+                <a class="icon-close" href="javascript:;"></a>
+            </div>
+            <div class="js-body">
+                <div class="poplayer-bd">
+                    <div class="poplayer-schoolbox-select">
+                        <span class="select-label">请选择省市：</span>
+                        <select class="js-select-province">
+                            <option value="北京市">北京市</option>
+                        </select>
+                        <span class="select-label schoolbox-select-text">没有自己的学校？<a class="click-trigger js-switch-form" href="javascript:;">点击直接输入</a></span>
+                        <span class="poplayer-schoolbox-select-form select-label hide">输入学校名称：
+                            <input type="text">
+                            <a class="click-trigger js-form-submit" href="javascript:;">点击提交</a>
+                        </span>
+                    </div>
+                    <div class="poplayer-schoolbox-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 大学模态框结束 -->
 </body>
 </html>
