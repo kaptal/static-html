@@ -435,6 +435,43 @@ $(function(){
         $('.modal-layer.select-university').removeClass('show').addClass('hide');
     });
 
+    $('.poplayer-schoolbox-list .js-list li').on('click', function () {
+        var universityName = $(this).children('span').html();
+        $('input.graduate-university').val(universityName);
+        $('.modal-layer.select-university').removeClass('show').addClass('hide');
+    });
+
+    $('.poplayer-schoolbox-select-form .js-form-submit').on('click', function () {
+        var clientUniversityName = $('input[name="custom-university-name"]').val();
+
+        if (clientUniversityName) {
+            // 发送到后台操作
+            // ... 等待添加
+
+            $('input.graduate-university').val(clientUniversityName);
+            $('.modal-layer.select-university').removeClass('show').addClass('hide');
+        }
+    });
+
+    $('.monolog-box .profile-monolog-preview a.a-icon-edit').on('click', function () {
+        $(this).parent().removeClass('show').addClass('hide');
+        //$('.monolog-box .profile-monolog-preview a.a-cancel-edit-text').parent().removeClass('hide').addClass('show');
+        $('.monolog-box .profile-monolog-edit-hd').removeClass('hide').addClass('show');
+        $('.monolog-box .profile-monolog-edit-hd .js-edit-btn').removeClass('hide').addClass('show');
+        $('.monolog-box .profile-monolog-preview').removeClass('show').addClass('hide');
+        $('.monolog-box .profile-monolog-textarea').removeClass('hide').addClass('show');
+        $('.monolog-box .profile-monolog-edit-send').removeClass('hide').addClass('show');
+    });
+
+    $('.monolog-box .profile-monolog-edit-hd a.a-cancel-edit-text').on('click', function () {
+        $(this).parent().removeClass('show').addClass('hide');
+        $('.monolog-box .profile-monolog-edit-hd').removeClass('show').addClass('hide');
+        $('.monolog-box .profile-monolog-preview').removeClass('hide').addClass('show');
+        $('.monolog-box .profile-monolog-preview .js-edit-btn').removeClass('hide').addClass('show');
+        $('.monolog-box .profile-monolog-textarea').removeClass('show').addClass('hide');
+        $('.monolog-box .profile-monolog-edit-send').removeClass('show').addClass('hide');
+    });
+
 
 });
 

@@ -130,10 +130,27 @@
         <div class="w">
             <div class="profile-header">
                 <div class="monolog-box">
-                    <em class="monolog-upper-arrows"></em>
-                    <em class="in-block icon-quote-up"></em>
-                    <span>今天我生日，希望能遇到那个合适的他，</span>
-                    <em class="in-block icon-quote-down"></em>
+                    <div class="profile-monolog-preview">
+                        <em class="monolog-upper-arrows"></em>
+                        <em class="in-block icon-quote-up"></em>
+                        <span>今天我生日，希望能遇到那个合适的他，</span>
+                        <em class="in-block icon-quote-down"></em>
+                        <span class="js-edit-btn"><a class="a-icon-edit" href="javascript:;"></a></span>
+                    </div>
+                    <div class="profile-monolog-edit-hd">
+                        <h3>内心独白</h3>
+                        <span class="profile-monolog-tips">一天内只可修改一次</span>
+                        <span class="js-edit-btn hide"><a class="a-cancel-edit-text" href="javascript:;">取消编辑</a></span>
+                    </div>
+                    <div class="profile-monolog-textarea">
+                        <textarea></textarea>
+                    </div>
+                    <div class="profile-monolog-edit-send">
+                        <div class="js-body">
+                            <span class="char-constantia"><strong>147</strong>个字</span>
+                            <a class="red-button" href="javascript:;">保存</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -711,12 +728,21 @@
                         </select>
                         <span class="select-label schoolbox-select-text">没有自己的学校？<a class="click-trigger js-switch-form" href="javascript:;">点击直接输入</a></span>
                         <span class="poplayer-schoolbox-select-form select-label hide">输入学校名称：
-                            <input type="text">
+                            <input type="text" name="custom-university-name">
                             <a class="click-trigger js-form-submit" href="javascript:;">点击提交</a>
                         </span>
                     </div>
                     <div class="poplayer-schoolbox-list">
-
+                        <ul class="js-list clearfix">
+                            <li title="清华大学"><em class="square"></em><span>清华大学</span></li>
+                            <li title="北京大学"><em class="square"></em><span>北京大学</span></li>
+                            <li title="中国人民大学"><em class="square"></em><span>中国人民大学</span></li>
+                            <li title="北京航空航天大学"><em class="square"></em><span>北京航空航天大学</span></li>
+                            <li title="北京邮电大学"><em class="square"></em><span>北京邮电大学</span></li>
+                            <li title="北京师范大学"><em class="square"></em><span>北京师范大学</span></li>
+                            <li title="中国传媒大学"><em class="square"></em><span>中国传媒大学</span></li>
+                            <li title="中国农业大学"><em class="square"></em><span>中国农业大学</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
