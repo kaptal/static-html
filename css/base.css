@@ -48,10 +48,10 @@ s,i,em{font-style:normal;text-decoration:none;}
     text-align:right
 }
 .hide {
-    display:none
+    display:none !important;
 }
 .show{
-    display:block;
+    display:block !important;
 }
 
 .white-color{

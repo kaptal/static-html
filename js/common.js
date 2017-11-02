@@ -461,6 +461,7 @@ $(function(){
         $('.monolog-box .profile-monolog-preview').removeClass('show').addClass('hide');
         $('.monolog-box .profile-monolog-textarea').removeClass('hide').addClass('show');
         $('.monolog-box .profile-monolog-edit-send').removeClass('hide').addClass('show');
+        $('.profile-content-box ').css('padding-top', '210px');
     });
 
     $('.monolog-box .profile-monolog-edit-hd a.a-cancel-edit-text').on('click', function () {
@@ -470,6 +471,22 @@ $(function(){
         $('.monolog-box .profile-monolog-preview .js-edit-btn').removeClass('hide').addClass('show');
         $('.monolog-box .profile-monolog-textarea').removeClass('show').addClass('hide');
         $('.monolog-box .profile-monolog-edit-send').removeClass('show').addClass('hide');
+        $('.profile-content-box ').css('padding-top', '60px');
+    });
+
+    $('.profile-tabbar li').on('click', function () {
+        $('.profile-trend-box').removeClass('show').addClass('hide');
+        $('.profile-info-box').removeClass('show').addClass('hide');
+        $('.profile-tabbar li').each(function (i, n) {
+            $(n).removeClass('current');
+        });
+        $(this).addClass('current');
+
+        if ($(this).hasClass('trigger-trend')) {
+            $('.profile-trend-box').addClass('show');
+        } else if ($(this).hasClass('trigger-info')) {
+            $('.profile-info-box').addClass('show');
+        }
     });
 
 

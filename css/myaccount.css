@@ -304,7 +304,7 @@
 
 .profile-content-box{
     background-color: #EDEFF5;
-    padding-top:50px;
+    padding-top:60px;
 }
 
 .con-left{
@@ -1142,4 +1142,89 @@
 .profile-monolog-edit-send .js-body .red-button {
     font-size: 13px;
     padding: 5px 12px;
+}
+
+.profile-monolog-preview .icon-noresult-s {
+    width: 31px;
+    height: 35px;
+    display: inline-block;
+    background: url(../images/noresult_s.png) no-repeat;
+    vertical-align: bottom;
+}
+
+.modal-layer.private-mess-box .poplayer-bd {
+    padding: 15px 20px;
+}
+
+.modal-layer.private-mess-box .mess-tips-close {
+    background-color: #FFF1DF;
+    font-size: 12px;
+    color: #5B5B5B;
+    font-family: Arial;
+    padding-left: 5px;
+}
+
+.private-mess-box .poplayer-send-message-addressee {
+    font-size: 12px;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.private-mess-box .poplayer-send-message-addressee .fl {
+    color: #999;
+}
+
+.private-mess-box .poplayer-send-message-addressee .fl i {
+    color: #333;
+}
+
+.private-mess-box .poplayer-send-message-addressee .fr a {
+    color: #7F97B4;
+}
+
+.private-mess-box .poplayer-send-message-addressee .fr a:hover {
+    text-decoration: underline;
+}
+
+.private-mess-box .publish-textarea {
+    padding: 5px;
+    border: 1px solid #C7C7C7;
+}
+
+.private-mess-box .publish-textarea textarea {
+    font-size: 14px;
+    line-height: 21px;
+    height: 58px;
+    padding: 0;
+    border: none;
+    width: 100%;
+    overflow-y: hidden;
+    outline: none;
+}
+
+.publish-operate .icon-face {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: text-top;
+    background: url(../images/icon_v170920.png) -56px -24px no-repeat;
+}
+
+.publish-operate {
+    margin-top: 2px;
+    color: #5B5B5B;
+    font-size: 12px;
+}
+
+.publish-operate .js-set-top {
+    vertical-align: text-bottom;
+}
+
+.publish-operate .text-red {
+    color: #FF3333;
+}
+
+.publish-operate .text-red:hover {
+    text-decoration: underline;
 }

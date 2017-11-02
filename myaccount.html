@@ -106,7 +106,7 @@
                 </p>
 
                 <p class="profile-basic-relation">
-                    <a href="#" class="icon-mess"><em></em><i>私信</i></a>
+                    <a href="javascript:;" class="icon-mess"><em></em><i>私信</i></a>
                     <a href="#" class="icon-fav"><em></em><i>喜欢</i></a>
                     <a href="#" class="sayhi"><em></em><i>打招呼</i></a>
                     <a href="#" class="sendgift"><em></em><i>送礼物</i></a>
@@ -132,20 +132,20 @@
                 <div class="monolog-box">
                     <div class="profile-monolog-preview">
                         <em class="monolog-upper-arrows"></em>
-                        <em class="in-block icon-quote-up"></em>
-                        <span>今天我生日，希望能遇到那个合适的他，</span>
-                        <em class="in-block icon-quote-down"></em>
-                        <span class="js-edit-btn"><a class="a-icon-edit" href="javascript:;"></a></span>
+                        <em class="in-block icon-quote-up hide"></em>
+                        <span class="text-gray">今天我生日，希望能遇到那个合适的他，<i class="icon-noresult-s"></i></span>
+                        <em class="in-block icon-quote-down hide"></em>
+                        <span class="js-edit-btn hide"><a class="a-icon-edit" href="javascript:;"></a></span>
                     </div>
-                    <div class="profile-monolog-edit-hd">
+                    <div class="profile-monolog-edit-hd hide">
                         <h3>内心独白</h3>
                         <span class="profile-monolog-tips">一天内只可修改一次</span>
                         <span class="js-edit-btn hide"><a class="a-cancel-edit-text" href="javascript:;">取消编辑</a></span>
                     </div>
-                    <div class="profile-monolog-textarea">
+                    <div class="profile-monolog-textarea hide ">
                         <textarea></textarea>
                     </div>
-                    <div class="profile-monolog-edit-send">
+                    <div class="profile-monolog-edit-send hide">
                         <div class="js-body">
                             <span class="char-constantia"><strong>147</strong>个字</span>
                             <a class="red-button" href="javascript:;">保存</a>
@@ -160,8 +160,8 @@
             <div class="con-left fl">
                 <div class="profile-tabbar clearfix">
                     <ul>
-                        <li>她的动态</li>
-                        <li class="current">她的资料</li>
+                        <li class="trigger-trend">她的动态</li>
+                        <li class="trigger-info current">她的资料</li>
                         <li>她的QA</li>
                     </ul>
                 </div>
@@ -749,5 +749,43 @@
         </div>
     </div>
 <!-- 大学模态框结束 -->
+
+<!-- 私信模态框开始 -->
+<div class="modal-layer private-mess-box">
+    <div class="main-box modal-layer-main-sm">
+        <div class="title-row">
+            <h3>发送私信</h3>
+            <a class="icon-close" href="javascript:;"></a>
+        </div>
+        <div class="js-body">
+            <div class="poplayer-bd">
+                <p class="mess-tips-close">
+                    <span>提醒：请选择熟悉的环境见面，不要和任何人产生金钱往来，以防被骗。</span>
+                </p>
+
+                <div class="poplayer-send-message-addressee">
+                    <span class="fl">收件人：<i>心锁</i></span>
+                    <span class="fr"><a href="javascript:;">共2条对话</a></span>
+                </div>
+
+                <div class="publish-textarea">
+                    <textarea></textarea>
+                </div>
+
+                <div class="publish-operate">
+                    <em class="icon-face emotion-trigger" title="表情"></em>
+                    <label class="label-tag">
+                        <input class="js-set-top" type="checkbox">
+                        在她消息中心置顶(<a class="text-red" href="javascript:;">开通高级VIP会员</a>免费使用)
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="foot-row">
+            <a class="general-btn red-button" href="javascript:;">知道了</a>
+        </div>
+    </div>
+</div>
+<!-- 私信模态框结束 -->
 </body>
 </html>
