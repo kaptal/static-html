@@ -351,19 +351,19 @@ $(function(){
      * profile-basic-tag-desc
      */
     $('.profile-basic-tag-desc .icon-edit-s').on('click', function () {
-        $('.tag-too-few-modal').show();
+        $('.tag-too-few-modal').removeClass('hide').addClass('show');
     });
 
 
     /**
      * 模态框的关闭
      */
-    $('.tag-too-few-modal .icon-close').on('click', function () {
-        $('.tag-too-few-modal').hide();
+    $('.tag-too-few-modal > .modal-layer-main-sm > .title-row > .icon-close').on('click', function () {
+        $('.tag-too-few-modal').removeClass('show').addClass('hide');
     });
 
     $('.tag-too-few-modal .foot-row .red-button').on('click', function () {
-        $('.tag-too-few-modal').hide();
+        $('.tag-too-few-modal').removeClass('show').addClass('hide');
     });
 
     /**
@@ -487,6 +487,38 @@ $(function(){
         } else if ($(this).hasClass('trigger-info')) {
             $('.profile-info-box').addClass('show');
         }
+    });
+
+    $(document).on('mouseup', function(e) {
+        var container = $('.emoji-layer');
+
+        // 除该div之外，点击其它任意地方，都让它隐藏
+        if (! container.is(e.target) && container.has(e.target).length === 0) {
+            container.removeClass('show').addClass('hide');
+        }
+    });
+
+    $('.emoji-layer .winlayer-emoji-list a').on('click', function () {
+        var emojiCode = $(this).data('code');
+        $('.private-mess-box .publish-textarea textarea').append(emojiCode);
+        $('.emoji-layer').removeClass('show').addClass('hide');
+    });
+
+    $('.private-mess-box .publish-operate .emotion-trigger').on('click', function () {
+        var emojiLayer = $('.emoji-layer');
+        emojiLayer.removeClass('hide').addClass('show');
+    });
+
+    $('.emoji-layer > .title-row > .icon-close').on('click', function () {
+        $('.emoji-layer').removeClass('show').addClass('hide');
+    });
+
+    $('.private-mess-box > .modal-layer-main-sm > .title-row > .icon-close').on('click', function () {
+        $('.private-mess-box').removeClass('show').addClass('hide');
+    });
+
+    $('.profile-basic-main > .profile-basic-relation > a.icon-mess').on('click', function() {
+        $('.private-mess-box').removeClass('hide').addClass('show');
     });
 
 

@@ -1204,6 +1204,7 @@
 }
 
 .publish-operate .icon-face {
+    cursor: pointer;
     height: 20px;
     width: 20px;
     display: inline-block;
@@ -1227,4 +1228,54 @@
 
 .publish-operate .text-red:hover {
     text-decoration: underline;
+}
+
+.emoji-layer {
+    width: inherit;
+    position: absolute;
+    left: 0;
+    top: 237px;
+    background-color: #F3F3F3;
+    border: 1px solid #666666;
+    box-shadow: 0 0 10px #666;
+}
+
+.emoji-layer .icon-winlayer-arrow-up {
+    position: absolute;
+    top: -8px;
+    left: 23px;
+    width: 14px;
+    height: 8px;
+    background: url(../images/icon_v170920.png) -109px -673px no-repeat;
+}
+
+.winlayer-emoji-list {
+    padding: 10px 20px;
+}
+
+.winlayer-emoji-list > ul > li {
+    float: left;
+    /*border-left: 1px solid #D9D9D9;*/
+    /*border-top: 1px solid #D9D9D9;*/
+    border: 1px solid #D9D9D9;
+    height: 33px;
+    width: 33px;
+    background-color: #fff;
+}
+
+.winlayer-emoji-list > ul > li a {
+    display: inherit;
+    background: #fff;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.winlayer-emoji-list > ul > li:hover {
+    border: 1px solid #4295F7;
+}
+
+.emoji-layer .emoji-select-tip {
+    font-size: 12px;
+    font-family: Arial;
+    margin-top: 10px;
 }
