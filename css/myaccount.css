@@ -1279,3 +1279,19 @@
     font-family: Arial;
     margin-top: 10px;
 }
+
+/*送礼物模态框开始*/
+.modal-layer.send-gift .main-box {
+    width: 830px;
+}
+
+.modal-layer.send-gift .title-row {
+    height: 53px;
+    background: url(../images/module/gift/bg.png) repeat-x;
+}
+
+.modal-layer.send-gift .title-row .icon-close {
+    top: 19px;
+    background: url(../images/icon_v160825.png) -116px -229px no-repeat;
+}
+/*送礼物模态框结束*/
