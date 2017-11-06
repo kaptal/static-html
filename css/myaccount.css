@@ -1286,6 +1286,7 @@
 }
 
 .modal-layer.send-gift .title-row {
+    color: #fff;
     height: 53px;
     background: url(../images/module/gift/bg.png) repeat-x;
 }
@@ -1293,5 +1294,75 @@
 .modal-layer.send-gift .title-row .icon-close {
     top: 19px;
     background: url(../images/icon_v160825.png) -116px -229px no-repeat;
+}
+
+.modal-layer.send-gift .foot-row {
+    background-color: #E2DFDD;
+}
+
+.modal-layer.send-gift .js-body {
+    background-color: #F2F2F2;
+}
+
+.modal-layer.send-gift .poplayer-bd {
+    background-color: #F2F2F2;
+    padding: 22px 16px 24px;
+}
+
+.modal-layer.send-gift .poplayer-bd .poplayer-gift-tips {
+    margin-bottom: 20px;
+}
+
+.modal-layer.send-gift .vip-text{
+    color:#ff0000 !important;
+}
+
+.modal-layer.send-gift .vip-text:hover {
+    text-decoration: underline;
+}
+
+.modal-layer.send-gift .vip-open-icon{
+    display:inline-block;
+    width:16px;
+    height:12px;
+    background: url(../images/icon_v160825.png) -206px -477px no-repeat;
+}
+
+.modal-layer.send-gift .poplayer-slider-content {
+    position: relative;
+    height: 410px;
+    margin: 0 auto;
+    width: 740px;
+    border: 1px solid red;
+}
+
+.modal-layer.send-gift .poplayer-slider-content .poplayer-slider-prev {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 18px;
+    height: 32px;
+    background: url(../images/icon_v170920.png) 0 -729px no-repeat;
+    transform: translateY(-50%);
+}
+
+.modal-layer.send-gift .poplayer-slider-content .poplayer-slider-prev.disabled {
+    cursor: default;
+    background: url(../images/icon_v170920.png) -46px -729px no-repeat;
+}
+
+.modal-layer.send-gift .poplayer-slider-content .poplayer-slider-next {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 18px;
+    height: 32px;
+    background: url(../images/icon_v170920.png) -23px -729px no-repeat;
+    transform: translateY(-50%);
+}
+
+.modal-layer.send-gift .poplayer-slider-content .poplayer-slider-next.disabled {
+    cursor: default;
+    background: url(../images/icon_v170920.png) -69px -729px no-repeat;
 }
 /*送礼物模态框结束*/
