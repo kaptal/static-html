@@ -1333,40 +1333,42 @@
     height: 410px;
     margin: 0 auto;
     width: 740px;
-    border: 1px solid red;
+    overflow: hidden;
 }
 
-.modal-layer.send-gift .poplayer-slider-content .poplayer-slider-prev {
+.modal-layer.send-gift .arrow-area {
+    position: relative;
+}
+
+.modal-layer.send-gift .poplayer-slider-prev {
     position: absolute;
-    top: 50%;
-    left: -30px;
+    top: 187px;
+    left: 0;
     width: 18px;
     height: 32px;
     background: url(../images/icon_v170920.png) 0 -729px no-repeat;
-    transform: translateY(-50%);
 }
 
-.modal-layer.send-gift .poplayer-slider-content .poplayer-slider-prev.disabled {
+.modal-layer.send-gift .poplayer-slider-prev.disabled {
     cursor: default;
     background: url(../images/icon_v170920.png) -46px -729px no-repeat;
 }
 
-.modal-layer.send-gift .poplayer-slider-content .poplayer-slider-next {
+.modal-layer.send-gift .poplayer-slider-next {
     position: absolute;
-    top: 50%;
-    right: -30px;
+    top: 187px;
+    right: 0;
     width: 18px;
     height: 32px;
     background: url(../images/icon_v170920.png) -23px -729px no-repeat;
-    transform: translateY(-50%);
 }
 
-.modal-layer.send-gift .poplayer-slider-content .poplayer-slider-next.disabled {
+.modal-layer.send-gift .poplayer-slider-next.disabled {
     cursor: default;
     background: url(../images/icon_v170920.png) -69px -729px no-repeat;
 }
 
-.modal-layer.send-gift .poplayer-slider-content .gift-list > li {
+.modal-layer.send-gift .poplayer-slider-content .gift-list-ul > li {
     width: 127px;
     float: left;
     background-color: #fff;
@@ -1375,26 +1377,40 @@
     position: relative;
 }
 
-.modal-layer.send-gift .poplayer-slider-content .gift-list > li:hover {
+.modal-layer.send-gift .poplayer-slider-content .gift-list-ul > li:hover {
     border: 4px solid #50B61C;
     overflow: hidden;
 }
 
-.modal-layer.send-gift .poplayer-slider-content .gift-list {
+.modal-layer.send-gift .poplayer-slider-content .gift-list-ul {
+    width: 740px;
+    /*width: 2265px;*/
+    position: relative;
+}
+
+.modal-layer.send-gift .poplayer-slider-content .poplayer-gift-list-box {
     width: 2265px;
     position: absolute;
     left: 0;
 }
 
-.modal-layer.send-gift .poplayer-slider-content .gift-list li.selected {
+.modal-layer.send-gift .poplayer-slider-content .gift-list-ul li.selected {
     border: 4px solid #50B61C;
     overflow: hidden;
+}
+
+.modal-layer.send-gift .poplayer-slider-content .gift-list-ul li:nth-child(5) {
+    margin-right: 0 !important;
+}
+
+.modal-layer.send-gift .poplayer-slider-content .gift-list-ul li:nth-child(10) {
+    margin-right: 0 !important;
 }
 
 .modal-layer.send-gift .poplayer-slider-content .gift-img-box {
     height: 121px;
     text-align: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .modal-layer.send-gift .poplayer-slider-content .gift-desc-box {
@@ -1449,5 +1465,14 @@
     width: 53px;
     height: 53px;
     background: url(../images/icon_v170920.png) -275px -943px no-repeat;
+}
+
+.modal-layer.send-gift .poplayer-slider-content .icon-gift-selected {
+    width: 15px;
+    height: 15px;
+    right: -4px;
+    bottom: -4px;
+    position: absolute;
+    background: url(../images/icon_v170920.png) -165px -349px no-repeat;
 }
 /*送礼物模态框结束*/

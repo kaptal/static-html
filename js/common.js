@@ -521,6 +521,23 @@ $(function(){
         $('.private-mess-box').removeClass('hide').addClass('show');
     });
 
+    $('.modal-layer.send-gift .gift-list-ul li').on('click', function () {
+        $('.modal-layer.send-gift .gift-list-ul li').each(function (i, n) {
+            $(n).removeClass('selected');
+        });
+
+        $('.icon-gift-selected').each(function (i, n) {
+            $(n).removeClass('show').addClass('hide');
+        });
+
+        $(this).addClass('selected');
+        $(this).find('.icon-gift-selected').removeClass('hide').addClass('show');
+    });
+
+    $('.modal-layer.send-gift .poplayer-slider-next').on('click', function () {
+        $('.modal-layer.send-gift .poplayer-gift-list-box').css({"left": "-740px"});
+    });
+
 
 });
 
