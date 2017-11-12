@@ -539,6 +539,9 @@ $(function(){
         var currentDisplayItem = modalObject.find('.current');
         var prevTabCount = currentDisplayItem.prevAll('ul').length;
         var nextTabCount = currentDisplayItem.nextAll('ul').length;
+        var target;
+        var dynamicLeftOffset;
+        var step;
 
 
         // 是否存在上一页
@@ -556,10 +559,6 @@ $(function(){
         } else {
             return false;
         }
-
-        var target;
-        var dynamicLeftOffset;
-        var step;
 
         var timer = setInterval(function () {
             var leftOffset = modalObject.position().left;
@@ -586,41 +585,37 @@ $(function(){
         var currentDisplayItem = modalObject.find('.current');
         var prevTabCount = currentDisplayItem.prevAll('ul').length;
         var nextTabCount = currentDisplayItem.nextAll('ul').length;
-
-
-        // 是否存在上一页
-        //if (prevTabCount >= 0) {
-        //    $(this).prev('a.poplayer-slider-prev').removeClass('disabled');
-        //}
-
-        // 是否存在下一页
-        //if (nextTabCount) {
-        //    if (nextTabCount == 1) {
-        //        $(this).addClass('disabled');
-        //    }
-        //    currentDisplayItem.removeClass('current');
-        //    currentDisplayItem.next('ul').addClass('current');
-        //} else {
-        //    return false;
-        //}
-        //modalObject.css({left: modalObject.position().left + 740});
-        //console.log(modalObject.position().left);
-
         var target;
         var dynamicLeftOffset;
         var step;
 
+        // 是否存在上一页
+        if (prevTabCount) {
+            if (prevTabCount == 1) {
+                $(this).addClass('disabled');
+            }
+
+            currentDisplayItem.removeClass('current');
+            currentDisplayItem.prev('ul').addClass('current');
+        } else {
+            return false;
+        }
+
+        if (nextTabCount >= 0) {
+            $(this).next('a.poplayer-slider-next').removeClass('disabled');
+        }
+
         var timer = setInterval(function () {
             var leftOffset = modalObject.position().left;
 
-            if (! target) {
+            if (typeof target == "undefined") {
                 target = leftOffset + 740;
             }
-            console.log(target);
 
             step = (Math.abs(leftOffset) - Math.abs(target) ) / 3;
             step = step > 0 ? Math.ceil(step) : Math.floor(step);
             dynamicLeftOffset = leftOffset + step;
+
 
             if (step == 0) {
                 clearInterval(timer);
