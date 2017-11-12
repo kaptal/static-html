@@ -535,7 +535,100 @@ $(function(){
     });
 
     $('.modal-layer.send-gift .poplayer-slider-next').on('click', function () {
-        $('.modal-layer.send-gift .poplayer-gift-list-box').css({"left": "-740px"});
+        var modalObject = $('.modal-layer.send-gift .poplayer-gift-list-box');
+        var currentDisplayItem = modalObject.find('.current');
+        var prevTabCount = currentDisplayItem.prevAll('ul').length;
+        var nextTabCount = currentDisplayItem.nextAll('ul').length;
+
+
+        // 是否存在上一页
+        if (prevTabCount >= 0) {
+            $(this).prev('a.poplayer-slider-prev').removeClass('disabled');
+        }
+
+        // 是否存在下一页
+        if (nextTabCount) {
+            if (nextTabCount == 1) {
+                $(this).addClass('disabled');
+            }
+            currentDisplayItem.removeClass('current');
+            currentDisplayItem.next('ul').addClass('current');
+        } else {
+            return false;
+        }
+
+        var target;
+        var dynamicLeftOffset;
+        var step;
+
+        var timer = setInterval(function () {
+            var leftOffset = modalObject.position().left;
+
+            if (! target) {
+                target = leftOffset - 740;
+            }
+
+            step = (Math.abs(target) - Math.abs(leftOffset)) / 3;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            dynamicLeftOffset = leftOffset - step;
+
+            if (step == 0) {
+                clearInterval(timer);
+            }
+
+            modalObject.css({left: dynamicLeftOffset});
+        }, 30);
+
+    });
+
+    $('.modal-layer.send-gift .poplayer-slider-prev').on('click', function () {
+        var modalObject = $('.modal-layer.send-gift .poplayer-gift-list-box');
+        var currentDisplayItem = modalObject.find('.current');
+        var prevTabCount = currentDisplayItem.prevAll('ul').length;
+        var nextTabCount = currentDisplayItem.nextAll('ul').length;
+
+
+        // 是否存在上一页
+        //if (prevTabCount >= 0) {
+        //    $(this).prev('a.poplayer-slider-prev').removeClass('disabled');
+        //}
+
+        // 是否存在下一页
+        //if (nextTabCount) {
+        //    if (nextTabCount == 1) {
+        //        $(this).addClass('disabled');
+        //    }
+        //    currentDisplayItem.removeClass('current');
+        //    currentDisplayItem.next('ul').addClass('current');
+        //} else {
+        //    return false;
+        //}
+        //modalObject.css({left: modalObject.position().left + 740});
+        //console.log(modalObject.position().left);
+
+        var target;
+        var dynamicLeftOffset;
+        var step;
+
+        var timer = setInterval(function () {
+            var leftOffset = modalObject.position().left;
+
+            if (! target) {
+                target = leftOffset + 740;
+            }
+            console.log(target);
+
+            step = (Math.abs(leftOffset) - Math.abs(target) ) / 3;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            dynamicLeftOffset = leftOffset + step;
+
+            if (step == 0) {
+                clearInterval(timer);
+            }
+
+            modalObject.css({left: dynamicLeftOffset});
+        }, 30);
+
     });
 
 
