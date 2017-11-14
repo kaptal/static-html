@@ -22,6 +22,45 @@
     padding:6px;
     background-color: #fff;
     padding-bottom:0;
+    position: relative;
+    cursor: pointer;
+}
+
+.user-avatar .user-check {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    text-align: center;
+}
+
+.user-avatar .user-check span {
+    width: 238px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.user-avatar .avatar-update{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 238px;
+    height: 238px;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.user-avatar .avatar-update span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 17px;
 }
 
 .profile-basic-main{

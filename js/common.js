@@ -630,6 +630,16 @@ $(function(){
         $(this).parents('.modal-layer.send-gift').removeClass('show').addClass('hide');
     });
 
+    $('.profile-mainbox .user-avatar').on('mouseover', function() {
+        $(this).children('.avatar-update').removeClass('hide').addClass('show');
+        $(this).children('.user-check').removeClass('show').addClass('hide');
+    });
+
+    $('.profile-mainbox .user-avatar').on('mouseout', function() {
+        $(this).children('.avatar-update').removeClass('show').addClass('hide');
+        $(this).children('.user-check').removeClass('hide').addClass('show');
+    });
+
 
 });
 
