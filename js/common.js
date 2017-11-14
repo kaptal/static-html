@@ -626,6 +626,10 @@ $(function(){
 
     });
 
+    $('.modal-layer.send-gift .icon-close').on('click', function () {
+        $(this).parents('.modal-layer.send-gift').removeClass('show').addClass('hide');
+    });
+
 
 });
 
