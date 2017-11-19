@@ -5,26 +5,26 @@
 $(function(){
     $('.top-nav .right-area > a:eq(2)').hover(function(){
         $(this).css('background-color','#fff');
-        $(this).children('span').css({"background":"url(../images/icon_v150709.png) -112px -259px no-repeat"});
+        $(this).children('span').css({"background":"url(images/icon_v150709.png) -112px -259px no-repeat"});
         $('.today-base').hide();
         $('.msg-box').show();
     },
     function(){
         $(this).css('background-color','transparent');
-        $(this).children('span').css({"background":"url(../images/icon_v150709.png) -72px -259px no-repeat"});
+        $(this).children('span').css({"background":"url(images/icon_v150709.png) -72px -259px no-repeat"});
         $('.today-base').show();
         $('.msg-box').hide();
     });
     $('.msg-box').hover(function(){
         var obj = $('.top-nav .right-area > a:eq(2)');
-        obj.children('span').css({"background":"url(../images/icon_v150709.png) -112px -259px no-repeat"});
+        obj.children('span').css({"background":"url(images/icon_v150709.png) -112px -259px no-repeat"});
         obj.css('background-color','#fff');
         $(this).show();
         $('.today-base').hide();
     },
     function(){
         var obj = $('.top-nav .right-area > a:eq(2)');
-        obj.children('span').css({"background":"url(../images/icon_v150709.png) -72px -259px no-repeat"});
+        obj.children('span').css({"background":"url(images/icon_v150709.png) -72px -259px no-repeat"});
         obj.css('background-color','transparent');
         $(this).hide();
         $('.today-base').show();
@@ -33,23 +33,23 @@ $(function(){
 
     $('.top-nav .right-area > a:eq(3)').hover(function(){
             $(this).css('background-color','#fff');
-            $(this).children('span').css({"background":"url(../images/icon_v150709.png) -36px -259px no-repeat"});
+            $(this).children('span').css({"background":"url(images/icon_v150709.png) -36px -259px no-repeat"});
             $('.msg-box1').show();
         },
         function(){
             $(this).css('background-color','transparent');
-            $(this).children('span').css({"background":"url(../images/icon_v150709.png) 0 -259px no-repeat"});
+            $(this).children('span').css({"background":"url(images/icon_v150709.png) 0 -259px no-repeat"});
             $('.msg-box1').hide();
         });
     $('.msg-box1').hover(function(){
             var obj = $('.top-nav .right-area > a:eq(3)');
-            obj.children('span').css({"background":"url(../images/icon_v150709.png) -36px -259px no-repeat"});
+            obj.children('span').css({"background":"url(images/icon_v150709.png) -36px -259px no-repeat"});
             obj.css('background-color','#fff');
             $(this).show();
         },
         function(){
             var obj = $('.top-nav .right-area > a:eq(3)');
-            obj.children('span').css({"background":"url(../images/icon_v150709.png) 0 -259px no-repeat"});
+            obj.children('span').css({"background":"url(images/icon_v150709.png) 0 -259px no-repeat"});
             obj.css('background-color','transparent');
             $(this).hide();
         });
