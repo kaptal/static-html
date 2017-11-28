@@ -1024,3 +1024,28 @@ header > .top-nav .left-area .nav{
 .text-gray {
     color: #999;
 }
+
+.credit-level {
+    display: inline-block;
+    border-radius: 14px;
+    font-size: 12px !important;
+    line-height: 12px;
+    color: #fff !important;
+    padding: 5px;
+}
+
+.credit-level:hover {
+    text-decoration: underline !important;
+}
+
+.credit-level.high-credit {
+    background-color: #f57e56;
+}
+
+.credit-level.middle-credit {
+    background-color: #fec049;
+}
+
+.credit-level.low-credit {
+    background-color: #93acca;
+}

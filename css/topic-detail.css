@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+.topic-crumbbox {
+    font-size: 12px;
+    margin-top: 30px;
+    color: #898989;
+    margin-bottom: 25px;
+}
+
+.topic-crumbbox .link-blue {
+    color: #7F97B4;
+}
+
+.topic-crumbbox .arrow-right {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.content-box {
+    color: #333;
+    background-color: #fff;
+}
+
+.topic-content-box {
+    padding: 20px 40px;
+    border: 1px solid red;
+}
+
+.topic-mainbox-owner {
+    border-bottom: 2px solid #535353;
+    padding-bottom: 15px;
+}
+
+.topic-main-box-title {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 10px;
+}
+
+.topic-mainbox-info {
+    margin-left: 20px;
+    position: relative;
+}
+
+.topic-mainbox-info .basic-info {
+    font-size: 14px;
+}
+
+.topic-mainbox-info .basic-info .js-username {
+    color: #333;
+}
+
+.topic-mainbox-info .basic-info a:hover {
+    text-decoration: underline;
+}
+
+.topic-mainbox-info .basic-info .owner {
+    color: #ff0000;
+}
+
+.topic-mainbox-info .info {
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.topic-mainbox-info .time {
+    color: #999;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.topic-mainbox-context .topic-mainbox-text {
+    color: #5B5B5B;
+    font: 14px/24px "simsun";
+    margin: 0 0 13px;
+    padding-top: 40px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.shareKit-platform a {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.shareKit-platform a:hover {
+    transition: all 0.5s;
+    transform-origin: center;
+    transform: rotateZ(360deg);
+}
+
+.topic-sharekit .shareKit-desc {
+    vertical-align: text-bottom;
+}
+
+.shareKit-platform .icon-share-sina {
+    background: url(../images/sns_21_v161110.png) 0 -170px no-repeat;
+}
+
+.shareKit-platform .icon-share-qzone {
+    background: url(../images/sns_21_v161110.png) 0 -250px no-repeat;
+}
+
+.shareKit-platform .icon-share-renren {
+    background: url(../images/sns_21_v161110.png) 0 -290px no-repeat;
+}
+
+.shareKit-platform .icon-share-qq {
+    background: url(../images/sns_21_v161110.png) 0 -410px no-repeat;
+}
+
+.shareKit-platform .icon-share-wechat {
+    background: url(../images/sns_21_v161110.png) 0 -370px no-repeat;
+}
+
+.shareKit-platform .icon-share-yixin {
+    background: url(../images/sns_21_v161110.png) 0 -450px no-repeat;
+}
