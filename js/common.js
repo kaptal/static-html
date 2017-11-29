@@ -640,6 +640,12 @@ $(function(){
         $(this).children('.user-check').removeClass('hide').addClass('show');
     });
 
+    // topic-detail page
+    $('.topic-hot-comment-list .comment-source .link-sd').hover(function () {
+        $('.topic-hot-comment-list .comment-reportblock').removeClass('hide').addClass('show');
+    }, function () {
+        $('.topic-hot-comment-list .comment-reportblock').removeClass('show').addClass('hide');
+    });
 
 });
 
