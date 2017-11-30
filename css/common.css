@@ -1049,3 +1049,40 @@ header > .top-nav .left-area .nav{
 .credit-level.low-credit {
     background-color: #93acca;
 }
+
+/*用户在线状态图标*/
+.user-status.icon-offline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    background: url(../images/icon_v170920.png) -71px -349px no-repeat;
+}
+
+.user-status.icon-android {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 11px;
+    height: 16px;
+    background: url(../images/icon_v170920.png) -38px -349px no-repeat;
+}
+
+.user-status.icon-iphone {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 11px;
+    height: 17px;
+    background: url(../images/icon_v170920.png) -22px -349px no-repeat;
+}
+
+.user-status.icon-online {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    background: url(../images/icon_v170920.png) -54px -349px no-repeat;
+}

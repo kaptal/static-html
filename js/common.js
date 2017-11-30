@@ -647,6 +647,28 @@ $(function(){
         $('.topic-hot-comment-list .comment-reportblock').removeClass('show').addClass('hide');
     });
 
+    $('.topic-hot-comment-list .comment-operate .js-reply-trigger').on('click', function () {
+
+        var currentReplyBox = $(this).parents('li.comment').find('.reply-send-box');
+
+        if (currentReplyBox.hasClass('show')) {
+            currentReplyBox.removeClass('show').addClass('hide');
+        } else {
+            $('.reply-send-box').each(function (i, n) {
+                $(n).removeClass('show').addClass('hide');
+            });
+
+            currentReplyBox.removeClass('hide').addClass('show');
+        }
+    });
+
+    $('.topic-hot-comment-list .comment-operate .js-like-trigger').on('click', function () {
+        if (! $(this).hasClass('disabled')) {
+            $(this).children('.icon-like').removeClass('native').addClass('liked');
+            $(this).addClass('disabled');
+        }
+    });
+
 });
 
 function closeAllSelectFilter()

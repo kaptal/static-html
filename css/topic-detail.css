@@ -161,6 +161,7 @@
 .topic-sendbox {
     width: 761px;
 }
+
 .topic-sendbox .editor{
     border:1px solid #E1E1E1;
 }
@@ -257,6 +258,11 @@
     margin-bottom: 8px;
 }
 
+.topic-hot-comment-list .comment {
+    border-bottom: 1px solid #DBDBDB;
+    padding: 20px 0 20px 0;
+}
+
 .topic-hot-comment-list .comment-info .js-username {
     font-weight: bold;
     margin-right: 5px;
@@ -268,12 +274,15 @@
 
 .topic-hot-comment-list .comment-main {
     margin-left: 15px;
+    width: 770px;
 }
 
 .topic-hot-comment-list .comment-main .comment-text {
     color: #5B5B5B;
     font-size: 14px;
     margin-bottom: 10px;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .topic-hot-comment-list .comment-main .comment-foot {
@@ -285,6 +294,11 @@
 
 .topic-hot-comment-list .comment-inner {
     position: relative;
+}
+
+.topic-hot-comment-list .comment-inner .avatar {
+    position: relative;
+    display: block;
 }
 
 .topic-hot-comment-list .comment-foot .comment-time {
@@ -337,4 +351,123 @@
     position: absolute;
     bottom: 0;
     right:0;
+}
+
+.right-contact-btn a {
+    position:relative;
+    display:inline-block;
+    border:1px solid #EBEBEB;
+    min-width: 60px;
+    /*padding:4px 0 4px 10px;*/
+    font-size:8px;
+    font-weight:700;
+    color:#999999;
+    vertical-align:middle;
+}
+
+.right-contact-btn a:hover{
+    /*color:#999999;*/
+}
+
+.right-contact-btn .likes{
+    padding-left:33px;
+}
+
+.right-contact-btn .icon-like{
+    position:absolute;
+    left:10px;
+    top:50%;
+    margin-top:-9px;
+    display:inline-block;
+    width:17px;
+    height:17px;
+    margin-right:5px;
+    /*vertical-align:middle;*/
+}
+
+.right-contact-btn .icon-like.liked {
+    background: url(../images/icon_v160825.png) -42px -371px no-repeat;
+}
+
+.right-contact-btn .native{
+    background: url(../images/icon_v160825.png) -64px -371px no-repeat;
+}
+
+.right-contact-btn .invoke{
+    background: url(../images/icon_v160825.png) -42px -371px no-repeat;
+}
+
+.right-contact-btn .current{
+    border:1px solid #C3C3C3;
+}
+
+.right-contact-btn .icon-send-msg{
+    height:30px;
+    text-align: center;
+}
+
+.right-contact-btn .icon-send-msg .native{
+    width:18px;
+    height:13px;
+    margin-top:-7px;
+    left:50%;
+    margin-left:-9px;
+    background: url(../images/icon_v160825.png) 0 -331px no-repeat;
+}
+
+.right-contact-btn .icon-send-msg .invoke{
+    background: url(../images/icon_v160825.png) -23px -331px no-repeat;
+}
+
+.right-contact-btn .icon-like-a-btn {
+    padding-right: 10px;
+}
+
+/*回复框开始*/
+
+.topic-hot-comment-list .reply-send-box {
+    width: 768px;
+    margin-left: 85px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.topic-hot-comment-list .reply-send-box .editor-wrap-box {
+    border:1px solid #E1E1E1;
+}
+
+.topic-hot-comment-list .reply-send-box .editor-wrap-box textarea{
+    border:none;
+    width:743px;
+    outline:none;
+    padding:8px;
+    font-size:15px;
+    color:#333333;
+    overflow: hidden;
+    height: 98px;
+}
+
+.topic-hot-comment-list .reply-send-box .arrow {
+    position: absolute;
+    right: 13px;
+    top: -14px;
+    width: 22px;
+    z-index: 3;
+}
+
+.topic-hot-comment-list .reply-send-box .arrow .line {
+    color: #D8D8D8;
+}
+
+.topic-hot-comment-list .reply-send-box .arrow * {
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 1.231;
+    display: block;
+    height: 20px;
+}
+
+.topic-hot-comment-list .reply-send-box .arrow .bg {
+    color: #FFF;
+    margin: -18px 0 0;
 }
