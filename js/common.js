@@ -642,9 +642,9 @@ $(function(){
 
     // topic-detail page
     $('.topic-hot-comment-list .comment-source .link-sd').hover(function () {
-        $('.topic-hot-comment-list .comment-reportblock').removeClass('hide').addClass('show');
+        $(this).parents('.comment-foot').find('.comment-reportblock').removeClass('hide').addClass('show');
     }, function () {
-        $('.topic-hot-comment-list .comment-reportblock').removeClass('show').addClass('hide');
+        $(this).parents('.comment-foot').find('.comment-reportblock').removeClass('show').addClass('hide');
     });
 
     $('.topic-hot-comment-list .comment-operate .js-reply-trigger').on('click', function () {
