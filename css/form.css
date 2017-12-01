@@ -209,7 +209,7 @@ option {
 
 .gray-button {
     background: #9C9C9C;
-    color: #FFF;
+    color: #FFF !important;
 }
 
 .gray-button:hover {

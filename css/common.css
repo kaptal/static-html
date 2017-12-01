@@ -1086,3 +1086,11 @@ header > .top-nav .left-area .nav{
     height: 12px;
     background: url(../images/icon_v170920.png) -54px -349px no-repeat;
 }
+
+a.user-vip-icon {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    background:url(../images/icon_v160825.png) -206px -477px no-repeat;
+    margin-right: 5px;
+}

@@ -534,6 +534,10 @@ $(function(){
         $(this).find('.icon-gift-selected').removeClass('hide').addClass('show');
     });
 
+    $('.profile-basic-relation .sendgift').on('click', function () {
+        $('.modal-layer.send-gift').removeClass('hide').addClass('show');
+    });
+
     $('.modal-layer.send-gift .poplayer-slider-next').on('click', function () {
         var modalObject = $('.modal-layer.send-gift .poplayer-gift-list-box');
         var currentDisplayItem = modalObject.find('.current');
@@ -641,10 +645,12 @@ $(function(){
     });
 
     // topic-detail page
-    $('.topic-hot-comment-list .comment-source .link-sd').hover(function () {
-        $(this).parents('.comment-foot').find('.comment-reportblock').removeClass('hide').addClass('show');
+    $('.topic-hot-comment-list .comment').hover(function () {
+        $(this).find('.comment-reportblock').removeClass('hide').addClass('show');
+        $(this).find('.icon-delete-trigger').removeClass('hide').addClass('show');
     }, function () {
-        $(this).parents('.comment-foot').find('.comment-reportblock').removeClass('show').addClass('hide');
+        $(this).find('.comment-reportblock').removeClass('show').addClass('hide');
+        $(this).find('.icon-delete-trigger').removeClass('show').addClass('hide');
     });
 
     $('.topic-hot-comment-list .comment-operate .js-reply-trigger').on('click', function () {
@@ -667,6 +673,18 @@ $(function(){
             $(this).children('.icon-like').removeClass('native').addClass('liked');
             $(this).addClass('disabled');
         }
+    });
+
+    $('.remove-reply-modal .foot-row .gray-button').on('click', function () {
+        $('.remove-reply-modal').removeClass('show').addClass('hide');
+    });
+
+    $('.remove-reply-modal .title-row .icon-close').on('click', function () {
+        $('.remove-reply-modal').removeClass('show').addClass('hide');
+    });
+
+    $('.topic-comment-box .icon-delete-trigger').on('click', function () {
+        $('.remove-reply-modal').removeClass('hide').addClass('show');
     });
 
 });

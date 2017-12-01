@@ -23,7 +23,6 @@
 
 .topic-content-box {
     padding: 20px 40px;
-    border: 1px solid red;
 }
 
 .topic-mainbox-owner {
@@ -265,7 +264,15 @@
 
 .topic-hot-comment-list .comment-info .js-username {
     font-weight: bold;
-    margin-right: 5px;
+}
+
+.topic-hot-comment-list .js-username.vip-light {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.topic-hot-comment-list .comment-info .user-vip-icon {
+
 }
 
 .topic-hot-comment-list .comment-info .age-and-area {
@@ -294,6 +301,16 @@
 
 .topic-hot-comment-list .comment-inner {
     position: relative;
+}
+
+.topic-hot-comment-list .comment-inner .icon-delete-trigger {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 1px;
+    right: 1px;
+    background: url(../images/icon_v170920.png) -101px -229px no-repeat;
+    cursor: pointer;
 }
 
 .topic-hot-comment-list .comment-inner .avatar {
@@ -471,3 +488,127 @@
     color: #FFF;
     margin: -18px 0 0;
 }
+
+.js-latest-list {
+    margin-top: 60px;
+}
+
+.js-latest-list .topic-title-bar span {
+    line-height: 32px;
+    margin-left: 5px;
+}
+
+.comment-main .comment-parent-text {
+    background-color: #F2F2F2;
+    color: #999;
+    padding: 8px 15px;
+    font-size: 12px;
+}
+
+.comment-main .comment-parent-text a {
+    color: #8A8F9C;
+}
+
+.comment-main .comment-parent-text a:hover {
+    text-decoration: underline;
+}
+
+.remove-reply-modal .foot-row .red-button{
+    right: 75px;
+}
+
+.remove-reply-modal .foot-row .gray-button{
+    padding-left: 12px;
+    padding-right: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.remove-reply-modal .content .result-inner {
+    padding: 20px 0 20px 0;
+}
+
+.remove-reply-modal .content .result-inner > p {
+    padding-left: 50px;
+}
+
+.remove-reply-modal .content .result-inner em {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url(../images/icon_v170920.png) 0 -153px no-repeat;
+    vertical-align: bottom;
+}
+
+.remove-reply-modal .foot-row .poplayer-label {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.remove-reply-modal .foot-row .poplayer-label span {
+    vertical-align: text-bottom;
+}
+
+.remove-reply-modal .modal-layer-main-sm {
+    width: 500px;
+}
+
+/*分页开始*/
+.js-footer{
+    margin-top: 20px;
+    padding-bottom:30px;
+}
+
+.js-footer .pagination{
+    width:640px;
+}
+
+.pages-big{
+    font-size:0;
+    margin-right: 83px;
+}
+
+.pages-big li{
+    display:inline-block;
+    font-size:11px;
+    border:1px solid #666666;
+    margin-left:5px;
+    line-height:11px;
+}
+
+.pages-big li:hover{
+    border:1px solid #FF3333;
+}
+
+.pages-big li a{
+    display:block;
+    height:11px;
+    padding:5px 8px;
+}
+
+.pages-big li a:hover{
+    background-color: #FF3333;
+    color:#fff;
+}
+
+.pages-big .pages-line{
+    border:1px solid transparent;
+}
+
+.pages-big .pages-line:hover{
+    border:1px solid transparent;
+}
+
+.pages-big .pages-line a:hover{
+    background-color: inherit;
+    color:#666;
+    cursor: default;
+}
+/*分页结束*/
