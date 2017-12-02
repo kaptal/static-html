@@ -318,6 +318,29 @@
     display: block;
 }
 
+.topic-hot-comment-list .comment-inner .avatar .invalid-username {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    line-height: 18px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    width: 70px;
+}
+
+.topic-hot-comment-list .comment-inner .avatar b {
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    height: 21px;
+    width: 100%;
+}
+
 .topic-hot-comment-list .comment-foot .comment-time {
     float: left;
     padding-top: 13px;
