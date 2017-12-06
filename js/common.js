@@ -3,56 +3,58 @@
  */
 
 $(function(){
-    $('.top-nav .right-area > a:eq(2)').hover(function(){
+    var navBarMessageBox = $('.top-nav .right-area > a:eq(2)');
+
+    navBarMessageBox.hover(function(){
         $(this).css('background-color','#fff');
-        $(this).children('span').css({"background":"url(images/icon_v150709.png) -112px -259px no-repeat"});
+        $(this).children('.icon-header-mess').addClass('hover');
         $('.today-base').hide();
         $('.msg-box').show();
     },
     function(){
         $(this).css('background-color','transparent');
-        $(this).children('span').css({"background":"url(images/icon_v150709.png) -72px -259px no-repeat"});
+        $(this).children('.icon-header-mess').removeClass('hover');
         $('.today-base').show();
         $('.msg-box').hide();
     });
+
     $('.msg-box').hover(function(){
-        var obj = $('.top-nav .right-area > a:eq(2)');
-        obj.children('span').css({"background":"url(images/icon_v150709.png) -112px -259px no-repeat"});
-        obj.css('background-color','#fff');
+        navBarMessageBox.children('.icon-header-mess').addClass('hover');
+        navBarMessageBox.css('background-color','#fff');
         $(this).show();
         $('.today-base').hide();
     },
     function(){
-        var obj = $('.top-nav .right-area > a:eq(2)');
-        obj.children('span').css({"background":"url(images/icon_v150709.png) -72px -259px no-repeat"});
-        obj.css('background-color','transparent');
+        navBarMessageBox.children('.icon-header-mess').removeClass('hover');
+        navBarMessageBox.css('background-color','transparent');
         $(this).hide();
         $('.today-base').show();
     });
 
+    var navBarInfoBox = $('.top-nav .right-area > a:eq(3)');
 
-    $('.top-nav .right-area > a:eq(3)').hover(function(){
-            $(this).css('background-color','#fff');
-            $(this).children('span').css({"background":"url(images/icon_v150709.png) -36px -259px no-repeat"});
-            $('.msg-box1').show();
-        },
-        function(){
-            $(this).css('background-color','transparent');
-            $(this).children('span').css({"background":"url(images/icon_v150709.png) 0 -259px no-repeat"});
-            $('.msg-box1').hide();
-        });
+    navBarInfoBox.hover(function(){
+        $(this).css('background-color','#fff');
+        $(this).children('.icon-header-info').addClass('hover');
+        $('.msg-box1').show();
+    },
+    function(){
+        $(this).css('background-color','transparent');
+        $(this).children('.icon-header-info').removeClass('hover');
+        $('.msg-box1').hide();
+    });
+
     $('.msg-box1').hover(function(){
-            var obj = $('.top-nav .right-area > a:eq(3)');
-            obj.children('span').css({"background":"url(images/icon_v150709.png) -36px -259px no-repeat"});
-            obj.css('background-color','#fff');
-            $(this).show();
-        },
-        function(){
-            var obj = $('.top-nav .right-area > a:eq(3)');
-            obj.children('span').css({"background":"url(images/icon_v150709.png) 0 -259px no-repeat"});
-            obj.css('background-color','transparent');
-            $(this).hide();
-        });
+        var obj = $('.top-nav .right-area > a:eq(3)');
+        navBarInfoBox.children('.icon-header-info').addClass('hover');
+        navBarInfoBox.css('background-color','#fff');
+        $(this).show();
+    },
+    function(){
+        navBarInfoBox.children('.icon-header-info').removeClass('hover');
+        navBarInfoBox.css('background-color','transparent');
+        $(this).hide();
+    });
 
     //banner区域
     $('#top-logo .right-area li a').hover(

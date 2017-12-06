@@ -81,7 +81,7 @@ header > .top-nav .left-area .nav{
     font:700 12px/12px Arial,sans-serif;
 }
 
-.top-nav .right-area a:nth-child(1) .sp1{
+.top-nav .right-area a > .icon-white-vip{
     position:absolute;
     width:27px;
     height: 13px;
@@ -90,13 +90,13 @@ header > .top-nav .left-area .nav{
     background:url(../images/icon_v160825.png) -247px -477px no-repeat;
 }
 
-.top-nav .right-area a:nth-child(1) .sp2{
+.top-nav .right-area a > .header-vip-service{
     position:absolute;
     top:21px;
     left:0;
 }
 
-.top-nav .right-area a:nth-child(1) .sp3{
+.top-nav .right-area a > .icon-hot{
     position:absolute;
     top:8px;
     left:22px;
@@ -122,7 +122,11 @@ header > .top-nav .left-area .nav{
     background:url(../images/icon_v160825.png) -152px -259px no-repeat;
 }
 
-.top-nav .right-area a:nth-child(3) .sp1{
+.top-nav .right-area a:nth-child(2).hover {
+    background-color: #fff;
+}
+
+.top-nav .right-area a > .icon-header-mess{
     position:absolute;
     width:33px;
     height: 15px;
@@ -131,13 +135,21 @@ header > .top-nav .left-area .nav{
     background:url(../images/icon_v160825.png) -72px -259px no-repeat;
 }
 
-.top-nav .right-area a:nth-child(4) .sp1{
+.top-nav .right-area a > .icon-header-mess.hover {
+    background: url(../images/icon_v150709.png) -112px -259px no-repeat;
+}
+
+.top-nav .right-area a > .icon-header-info{
     position:absolute;
     width:30px;
     height: 18px;
     right:0;
     top:17px;
     background:url(../images/icon_v160825.png) 0 -259px no-repeat;
+}
+
+.top-nav .right-area a > .icon-header-info.hover {
+    background: url(../images/icon_v150709.png) -36px -259px no-repeat;
 }
 
 .top-nav .right-area .today-base{
