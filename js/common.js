@@ -346,7 +346,15 @@ $(function(){
 
     // home页会员筛选js
     $('.feed-filter-action .submit-cancel').on('click', function () {
-        $('.feed-filter').slideUp(1000);
+        var feedFilterObject = $('.feed-filter');
+        if (feedFilterObject.hasClass('slider-hide')) {
+            // 显示
+            feedFilterObject.removeClass('slider-hide');
+            feedFilterObject.slideUp(1000);
+        } else {
+            feedFilterObject.addClass('slider-hide');
+            feedFilterObject.slideDown(1000);
+        }
     });
 
     /**
