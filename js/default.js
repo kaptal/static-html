@@ -44,16 +44,10 @@ $(function () {
         $(this).parents('.publish-trend-modal').find('.js-placeholder').addClass('hide');
 
         if ($(this).hasClass('custom-tag')) {
-            homePublishTrendTextarea.append('##').selectRange(1);
+            homePublishTrendTextarea.val(homePublishTrendTextarea.val() + '##').selectRange(1);
         } else {
-            homePublishTrendTextarea.append($(this).html());
+            homePublishTrendTextarea.val(homePublishTrendTextarea.val() + $(this).html());
         }
-
-        //if ($(this).hasClass('custom-tag')) {
-        //    homePublishTrendTextarea.val(homePublishTrendTextarea.val() + '##').selectRange(1);
-        //} else {
-        //    homePublishTrendTextarea.val(homePublishTrendTextarea.val() + $(this).html());
-        //}
     });
 
     homePublishTrendTextarea.on('focus', function () {
