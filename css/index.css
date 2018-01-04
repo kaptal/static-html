@@ -480,6 +480,252 @@
     height:47px;
 }
 
+.publish-trend-modal .modal-layer-main {
+    width: 590px;
+}
 
+.publish-trend-modal .content {
+    padding: 0 20px 20px;
+    font-size: 14px;
+    font-family: Arial;
+    color: #999;
+}
 
+.publish-trend-modal .tag-list .js-add-tag {
+    float: left;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    max-width: 25%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.publish-trend-modal .tag-list .js-add-tag:hover {
+    color: #fff;
+    border-color: #fc795b;
+    background: #fc795b;
+}
+
+.publish-trend-modal .trend-content-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.publish-trend-modal .trend-content-container .placeholder {
+    position: absolute;
+    left: 1px;
+    top: 5px;
+    padding-left: 8px;
+    line-height: 1.5;
+    display: block;
+}
+
+.publish-trend-modal .trend-content-container .trend-content {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    width: 100%;
+    min-height: 66px;
+    max-height: 138px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #e6e6e6;
+    background: none;
+    resize: none;
+    overflow: auto;
+}
+
+.publish-trend-modal .trend-content-container .word-count {
+    padding: 4px 8px 4px 0;
+    line-height: 1;
+    text-align: right;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.publish-trend-modal .trend-content-container .js-word-count.warning {
+    color: #ff0000;
+}
+
+.publish-trend-modal .photo-group {
+    font-size: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    line-height: 0;
+}
+
+.publish-trend-modal .photo-group > li {
+    position: relative;
+    display: inline-block;
+    width: 127px;
+    height: 127px;
+
+}
+
+.publish-trend-modal .photo-group li ~ li {
+    margin-left: 20px;
+}
+
+.publish-trend-modal .photo-group > li > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.publish-trend-modal .photo-group > li .icon-close-m {
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    margin: 0;
+    background-position: -60px -229px;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    background-image: url(../images/icon_v160825.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.publish-trend-modal .photo-group > li .icon-close-m.hover {
+    display: inline-block;
+}
+
+.publish-trend-modal .photo-group > li .icon-close-m:hover {
+    background-position: -80px -229px;
+}
+
+.publish-trend-modal .photo-group > li .tip-background {
+    width: 100%;
+    background: #222;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.publish-trend-modal .photo-group > li .bottom-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 22px;
+}
+
+.publish-trend-modal .photo-group > li .tip {
+    width: 100%;
+    line-height: 22px;
+    font-size: small;
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+}
+
+.publish-trend-modal .photo-group .photo-uploader {
+    line-height: 127px;
+    text-align: center;
+    font-size: 0;
+    background: #bec6d2;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.publish-trend-modal .photo-group .photo-uploader .bottom-desc {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #fff;
+}
+
+.publish-trend-modal .photo-group .photo-uploader .bottom-desc > i {
+    margin-bottom: 15px;
+}
+
+.publish-trend-modal .photo-group .photo-uploader .bottom-desc .icon-add-b {
+    background-position: -254px -843px;
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    background-image: url(../images/icon_v160825.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-size: 0;
+}
+
+.publish-trend-modal .photo-group .photo-uploader form {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.publish-trend-modal .photo-group .photo-uploader form input[type="file"] {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+.publish-trend-modal .photo-tip {
+    overflow: hidden;
+}
+
+.publish-trend-modal .photo-tip .photo-number {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+}
+
+.publish-trend-modal .photo-tip .photo-number {
+    line-height: 25px;
+}
+
+.photo-tip .photo-errors {
+    position: relative;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.text-icon-tips-warning {
+    background: #FFFFF8;
+    border: 1px solid #FFB777;
+    color: #F63;
+}
+
+.text-icon-tips-warning, .text-icon-tips-help {
+    padding: 0 8px 0 25px;
+}
+
+.icon-warning-s {
+    background-position: 0 -210px;
+    height: 14px;
+    width: 14px;
+}
+
+.photo-tip .photo-errors > em {
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    background-color: transparent;
+    background-image: url(../images/icon_v160825.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-size: 0;
+}
 
