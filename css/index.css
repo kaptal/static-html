@@ -729,3 +729,283 @@
     font-size: 0;
 }
 
+/*发布letter*/
+.pulish-letter-modal .modal-layer-main {
+    width: 590px;
+}
+
+.pulish-letter-modal .title-row {
+    background: #E8E8E8;
+}
+
+.pulish-letter-modal .title-row > h3 {
+    float: left;
+    margin-right: 8px;
+}
+
+.pulish-letter-modal .poplayer-subtitle {
+    float: left;
+    margin-top: 10px;
+    line-height: 21px;
+    font-size: 12px;
+}
+
+.pulish-letter-modal .text-md {
+    color: #999;
+}
+
+.pulish-letter-modal .content {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pulish-letter-modal .poplayer-letter-template {
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.pulish-letter-modal .poplayer-letter-template a.current {
+    font-weight: bold;
+    background: #DDD;
+}
+
+.pulish-letter-modal .poplayer-letter-template a:hover {
+    background: #DDD;
+}
+
+.pulish-letter-modal .poplayer-letter-template a {
+    display: inline-block;
+    padding: 0 7px;
+    margin-right: 4px;
+    min-width: 55px;
+    text-align: center;
+    width: 55px;
+    white-space: nowrap;
+    color: #333;
+}
+
+.pulish-letter-modal .poplayer-letter-content {
+    margin-top: 7px;
+    width: 531px;
+}
+
+.pulish-letter-modal .letter-body {
+    /*font-family: '\5FAE\8F6F\96C5\9ED1';*/
+    font-size: 14px;
+    color: #555;
+}
+
+.pulish-letter-modal .letter-hd {
+    height: 70px;
+    padding: 0 0 0 28px;
+}
+
+.letter-hd-title {
+    /*font-family: '\5FAE\8F6F\96C5\9ED1','\9ED1\4F53';*/
+    color: #C7E3F9;
+    font-size: 22px;
+    padding-top: 21px;
+}
+
+.letter-template-default .n-letter-title-default {
+    display: inline;
+}
+
+.letter-hd-title span {
+    display: none;
+}
+
+/*default*/
+
+.pulish-letter-modal .letter-template-default .letter-hd {
+    background: transparent url(../images/common/letter/default/hd.png) no-repeat left top;
+}
+
+.pulish-letter-modal .letter-template-default .letter-bd {
+    background: transparent url(../images/common/letter/default/bd.png) repeat-y left top;
+}
+
+.pulish-letter-modal .letter-template-default .letter-ft {
+    background: transparent url(../images/common/letter/default/ft.png) no-repeat left top;
+}
+
+/*past*/
+
+.pulish-letter-modal .letter-template-past .letter-hd {
+    background: transparent url(../images/common/letter/past/hd.png) no-repeat left top;
+}
+
+.pulish-letter-modal .letter-template-past .letter-bd {
+    background: transparent url(../images/common/letter/past/bd.png) repeat-y left top;
+}
+
+.pulish-letter-modal .letter-template-past .letter-ft {
+    background: transparent url(../images/common/letter/past/ft.png) no-repeat left top;
+}
+
+/*xiaoshipian*/
+
+.pulish-letter-modal .letter-template-xiaoshipian .letter-hd {
+    background: transparent url(../images/common/letter/xiaoshipian/hd.png) no-repeat left top;
+}
+
+.pulish-letter-modal .letter-template-xiaoshipian .letter-bd {
+    background: transparent url(../images/common/letter/xiaoshipian/bd.png) repeat-y left top;
+}
+
+.pulish-letter-modal .letter-template-xiaoshipian .letter-ft {
+    background: transparent url(../images/common/letter/xiaoshipian/ft.png) no-repeat left top;
+}
+
+/*unbosom*/
+
+.pulish-letter-modal .letter-template-unbosom .letter-hd {
+    background: transparent url(../images/common/letter/unbosom/hd.png) no-repeat left top;
+}
+
+.pulish-letter-modal .letter-template-unbosom .letter-bd {
+    background: transparent url(../images/common/letter/unbosom/bd.png) repeat-y left top;
+}
+
+.pulish-letter-modal .letter-template-unbosom .letter-ft {
+    background: transparent url(../images/common/letter/unbosom/ft.png) no-repeat left top;
+}
+
+.letter-bd {
+    padding: 0 30px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.poplayer-letter-textarea {
+    padding-top: 5px;
+}
+
+.letter-body textarea {
+    color: #686868;
+}
+
+.poplayer-letter-textarea textarea {
+    border: 0;
+    background: transparent;
+    color: #333;
+    /*font-family: '\5FAE\8F6F\96C5\9ED1';*/
+    font-size: 14px;
+    /*line-height: 28px;*/
+    /*height: 28px;*/
+    resize: none;
+    outline: none;
+    overflow-y: hidden;
+    width: 100%;
+    vertical-align: top;
+}
+
+.poplayer-letter-sign {
+    padding: 9px 15px 0 0;
+    line-height: 19px;
+    height: 19px;
+    text-align: right;
+}
+
+.letter-ft {
+    height: 48px;
+}
+
+.poplayer-letter-ft {
+    margin-top: 10px;
+    text-align: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 24px;
+}
+
+.poplayer-letter-btn, .poplayer-letter-tips {
+    float: right;
+    font-weight: bold;
+    margin-left: 7px;
+}
+
+.n-btn-box .disabled .n-btn-sure, .n-btn-box .disabled .n-btn-sure:hover, .btn-disabled, .btn-disabled:hover {
+    background: #C7C7C7;
+    color: #A2A2A2;
+    cursor: default;
+}
+
+.btn-red {
+    background: #FF3333;
+    color: #FFF;
+}
+
+.btn {
+    line-height: 25px;
+    height: 25px;
+    padding: 0 15px;
+}
+
+.btn, .btnM, .btnB, .btn-white {
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    outline: none;
+    text-align: center;
+}
+
+.poplayer-letter-tips {
+    color: #999;
+}
+
+.poplayer-letter-btn, .poplayer-letter-tips {
+    float: right;
+    font: 12px/1.75 Arial,sans-serif,宋体;
+    font-weight: bold;
+    margin-left: 7px;
+}
+
+.poplayer-letter-ft .warn .char-constantia {
+    color: #FF3333;
+}
+
+.char-constantia {
+    color: #333;
+    font-family: Georgia;
+    font-size: 14px;
+}
+
+.text-small-tips {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 23px;
+    position: relative;
+}
+
+.cGray, .cGray:hover, .cGray a, .cGray a:hover {
+    color: #585858;
+}
+
+.text-small-tips em {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: transparent;
+    background-image: url(../images/icon_v160825.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-size: 0;
+}
+
+.icon-correct-s {
+    background-position: -32px -210px;
+    height: 14px;
+    width: 14px;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+    font-weight: 400;
+}
