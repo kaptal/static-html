@@ -162,4 +162,12 @@ $(function () {
             letterTips.html('至少输入<b class="char-constantia">10</b>个字');
         }
     });
+
+    $('.upload-bar em.text-emoji').on('click', function () {
+        $('.publish-letter-modal').removeClass('hide');
+    });
+
+    $('.publish-letter-modal .icon-close').on('click', function () {
+        $(this).parents('.publish-letter-modal').addClass('hide');
+    });
 });
