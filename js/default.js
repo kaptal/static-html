@@ -123,4 +123,43 @@ $(function () {
     $('.upload-bar .g-upload-photo-trigger').on('click', function () {
         $('.publish-trend-modal').removeClass('hide');
     });
+
+    /* 文字传情开始   index.html */
+    $('.publish-letter-modal .poplayer-letter-template > a').on('click', function () {
+        var targetBodyClassSuffix = $(this).data('target-bd');
+        var targetBodyClasses = targetBodyClassSuffix.split('-');
+        var targetTemplateName = targetBodyClasses[targetBodyClasses.length - 1];
+        var prefixClassName = 'letter-template-';
+        var bdObject = $(this).parents('.publish-letter-modal').find('.poplayer-letter-content');
+        bdObject.removeClass(function (index, css) {
+            // Uncaught TypeError: Cannot read property 'join' of null
+            // return css.match(/\bletter-template-\S+/g).join(' ');
+            return (css.match(/\bletter-template-\S+/g) || []).join(' ');
+        });
+        bdObject.addClass(prefixClassName + targetTemplateName);
+
+        $(this).parent().find('a').each(function (i, n) {
+            $(n).removeClass('current');
+        });
+
+        $(this).addClass('current');
+    });
+
+    $('.publish-letter-modal .ui-scrollbar').on('input keyup', function () {
+        var textLength = $.fn.getCharacterLength($(this).val());
+        var letterTips = $('.publish-letter-modal .js-lineCounter');
+        var maxLength = 500;
+
+        if (textLength >= 10) {
+            var htmlContent = '还可以输入<b class="char-constantia">'+(maxLength - textLength)+'</b>个字';
+            letterTips.removeClass('warn');
+            letterTips.html(htmlContent);
+        } else {
+            if (! letterTips.hasClass('warn')) {
+                letterTips.addClass('warn');
+            }
+
+            letterTips.html('至少输入<b class="char-constantia">10</b>个字');
+        }
+    });
 });

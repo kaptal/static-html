@@ -730,51 +730,51 @@
 }
 
 /*发布letter*/
-.pulish-letter-modal .modal-layer-main {
+.publish-letter-modal .modal-layer-main {
     width: 590px;
 }
 
-.pulish-letter-modal .title-row {
+.publish-letter-modal .title-row {
     background: #E8E8E8;
 }
 
-.pulish-letter-modal .title-row > h3 {
+.publish-letter-modal .title-row > h3 {
     float: left;
     margin-right: 8px;
 }
 
-.pulish-letter-modal .poplayer-subtitle {
+.publish-letter-modal .poplayer-subtitle {
     float: left;
     margin-top: 10px;
     line-height: 21px;
     font-size: 12px;
 }
 
-.pulish-letter-modal .text-md {
+.publish-letter-modal .text-md {
     color: #999;
 }
 
-.pulish-letter-modal .content {
+.publish-letter-modal .content {
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.pulish-letter-modal .poplayer-letter-template {
+.publish-letter-modal .poplayer-letter-template {
     font-size: 12px;
     line-height: 1.75;
 }
 
-.pulish-letter-modal .poplayer-letter-template a.current {
+.publish-letter-modal .poplayer-letter-template a.current {
     font-weight: bold;
     background: #DDD;
 }
 
-.pulish-letter-modal .poplayer-letter-template a:hover {
+.publish-letter-modal .poplayer-letter-template a:hover {
     background: #DDD;
 }
 
-.pulish-letter-modal .poplayer-letter-template a {
+.publish-letter-modal .poplayer-letter-template a {
     display: inline-block;
     padding: 0 7px;
     margin-right: 4px;
@@ -785,18 +785,18 @@
     color: #333;
 }
 
-.pulish-letter-modal .poplayer-letter-content {
+.publish-letter-modal .poplayer-letter-content {
     margin-top: 7px;
     width: 531px;
 }
 
-.pulish-letter-modal .letter-body {
+.publish-letter-modal .letter-body {
     /*font-family: '\5FAE\8F6F\96C5\9ED1';*/
     font-size: 14px;
     color: #555;
 }
 
-.pulish-letter-modal .letter-hd {
+.publish-letter-modal .letter-hd {
     height: 70px;
     padding: 0 0 0 28px;
 }
@@ -808,67 +808,103 @@
     padding-top: 21px;
 }
 
-.letter-template-default .n-letter-title-default {
-    display: inline;
+.letter-template-past .letter-hd-title {
+    color: #9F9CCC;
+}
+
+.publish-letter-modal .publish-btn {
+    line-height: 25px;
+    height: 25px;
+    padding: 0 15px;
+}
+
+.publish-letter-modal .publish-btn.disabled {
+    background-color: #C7C7C7;
+    color: #A2A2A2;
+    cursor: not-allowed;
+}
+
+.letter-template-xiaoshipian .letter-hd-title {
+    color: #D1D1D1;
+}
+
+.letter-template-unbosom .letter-hd-title {
+    color: #D1D1D1;
 }
 
 .letter-hd-title span {
     display: none;
 }
 
+.letter-template-default .n-letter-title-default {
+    display: inline;
+}
+
+.letter-template-past .n-letter-title-past {
+    display: inline;
+}
+
+.letter-template-xiaoshipian .n-letter-title-xiaoshipian {
+    display: inline;
+}
+
+.letter-template-unbosom .n-letter-title-unbosom {
+    display: inline;
+}
+
 /*default*/
 
-.pulish-letter-modal .letter-template-default .letter-hd {
+.publish-letter-modal .letter-template-default .letter-hd {
     background: transparent url(../images/common/letter/default/hd.png) no-repeat left top;
 }
 
-.pulish-letter-modal .letter-template-default .letter-bd {
+.publish-letter-modal .letter-template-default .letter-bd {
     background: transparent url(../images/common/letter/default/bd.png) repeat-y left top;
 }
 
-.pulish-letter-modal .letter-template-default .letter-ft {
+.publish-letter-modal .letter-template-default .letter-ft {
     background: transparent url(../images/common/letter/default/ft.png) no-repeat left top;
 }
 
 /*past*/
 
-.pulish-letter-modal .letter-template-past .letter-hd {
+.publish-letter-modal .letter-template-past .letter-hd {
     background: transparent url(../images/common/letter/past/hd.png) no-repeat left top;
 }
 
-.pulish-letter-modal .letter-template-past .letter-bd {
+.publish-letter-modal .letter-template-past .letter-bd {
     background: transparent url(../images/common/letter/past/bd.png) repeat-y left top;
 }
 
-.pulish-letter-modal .letter-template-past .letter-ft {
+.publish-letter-modal .letter-template-past .letter-ft {
     background: transparent url(../images/common/letter/past/ft.png) no-repeat left top;
 }
 
 /*xiaoshipian*/
 
-.pulish-letter-modal .letter-template-xiaoshipian .letter-hd {
+.publish-letter-modal .letter-template-xiaoshipian .letter-hd {
     background: transparent url(../images/common/letter/xiaoshipian/hd.png) no-repeat left top;
 }
 
-.pulish-letter-modal .letter-template-xiaoshipian .letter-bd {
+.publish-letter-modal .letter-template-xiaoshipian .letter-bd {
     background: transparent url(../images/common/letter/xiaoshipian/bd.png) repeat-y left top;
 }
 
-.pulish-letter-modal .letter-template-xiaoshipian .letter-ft {
+.publish-letter-modal .letter-template-xiaoshipian .letter-ft {
     background: transparent url(../images/common/letter/xiaoshipian/ft.png) no-repeat left top;
 }
 
 /*unbosom*/
 
-.pulish-letter-modal .letter-template-unbosom .letter-hd {
+.publish-letter-modal .letter-template-unbosom .letter-hd {
     background: transparent url(../images/common/letter/unbosom/hd.png) no-repeat left top;
 }
 
-.pulish-letter-modal .letter-template-unbosom .letter-bd {
+.publish-letter-modal .letter-template-unbosom .letter-bd {
     background: transparent url(../images/common/letter/unbosom/bd.png) repeat-y left top;
 }
 
-.pulish-letter-modal .letter-template-unbosom .letter-ft {
+.publish-letter-modal .letter-template-unbosom .letter-ft {
     background: transparent url(../images/common/letter/unbosom/ft.png) no-repeat left top;
 }
 
